@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rhix — Full-Stack Developer</title>
+<meta name="description" content="Rhix: Full-Stack Developer. Ship apps, data pipelines, and intelligent experiences at the speed of thought. Powered by Muse Spark." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Clash+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="particles"></canvas>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">R</span>
+      <span>Rhix <em>· Dev</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#playground">Playground</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+      <a href="#playground" class="btn btn-primary btn-sm">Try Live Demo →</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#capabilities">Capabilities</a>
+    <a href="#playground">Playground</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="pill"><span class="pulse"></span> Rhix · Full-Stack Developer · Powered by Muse Spark</div>
+      <h1>Hi, I'm Rhix — I ship <span class="grad">extraordinary</span> software.</h1>
+      <p class="lede">I'm Rhix, a Full-Stack Developer. I architect full-stack apps, wrangle data, automate clouds, and debug the impossible. Type an idea. Watch it become real.</p>
+      <div class="typed-line"><span class="prompt">$</span> <span id="typed"></span><span class="caret">▊</span></div>
+      <div class="hero-cta">
+        <a href="#playground" class="btn btn-primary">⚡ Launch Playground</a>
+        <a href="#work" class="btn btn-ghost">View Selected Work</a>
+      </div>
+      <div class="stats">
+        <div><strong data-count="48">0</strong><span>projects shipped</span></div>
+        <div><strong data-count="12">0</strong><span>languages fluent</span></div>
+        <div><strong data-count="99">0</strong><span>% test pass rate</span></div>
+        <div><strong data-count="24">0</strong><span>/7 always on</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="tilt" id="tilt">
+        <div class="code-card glass">
+          <div class="card-bar"><i></i><i></i><i></i><span>api.ts — Muse Spark</span></div>
+<pre><code><span class="k">async function</span> <span class="f">shipIdea</span>(idea: <span class="t">string</span>) {
+  <span class="k">const</span> plan = <span class="k">await</span> <span class="f">spark.reason</span>(idea);
+  <span class="k">const</span> app = <span class="k">await</span> <span class="f">spark.build</span>({
+    frontend: <span class="s">"react+tailwind"</span>,
+    backend: <span class="s">"python+fabric"</span>,
+    verify: <span class="b">true</span>
+  });
+  <span class="k">return</span> app.<span class="f">deploy</span>(<span class="s">"edge-global"</span>);
+}</code></pre>
+          <div class="build-row"><span class="badge ok">✓ Build passed · 1.2s</span><span class="badge">⚡ 0 errors</span></div>
+        </div>
+        <div class="chat-card glass">
+          <div class="chat-head"><span class="avatar">✦</span><div><b>Muse Spark</b><small>● online</small></div><span class="latency">38ms</span></div>
+          <div class="chat-body" id="heroChat"></div>
+        </div>
+        <div class="float-chip chip-1">🚀 Deployed to production</div>
+        <div class="float-chip chip-2">🧠 Reasoning + verifying…</div>
+      </div>
+    </div>
+  </div>
+  <div class="marquee"><div class="marquee-track" id="marqueeTrack">
+    <span>React</span><span>Python</span><span>TypeScript</span><span>Fabric</span><span>Power Platform</span><span>Azure</span><span>PostgreSQL</span><span>Docker</span><span>OpenAI</span><span>Tailwind</span><span>Node.js</span><span>Spark</span>
+  </div></div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="section" id="capabilities">
+  <div class="section-head reveal">
+    <p class="eyebrow">01 — Capabilities</p>
+    <h2>One mind. <span class="grad">Every stack.</span></h2>
+    <p class="sub">From pixel to pipeline — I design, code, analyze, and operate. Hover each card.</p>
+  </div>
+  <div class="cap-grid">
+    <article class="cap glass reveal"><div class="icon">◈</div><h3>Full-Stack Engineering</h3><p>React, Next.js, Python, Node, REST, SQL. Accessible, responsive, production-grade apps from prompt to deploy.</p><div class="tags"><span>React</span><span>TS</span><span>FastAPI</span></div></article>
+    <article class="cap glass reveal"><div class="icon">⬢</div><h3>Data & Analytics</h3><p>Pandas, Fabric, Spark, DAX, Power BI. I clean messy data, model it, and turn it into decisions.</p><div class="tags"><span>Fabric</span><span>DAX</span><span>Python</span></div></article>
+    <article class="cap glass reveal"><div class="icon">⬣</div><h3>AI Integration</h3><p>LLM apps, RAG, agents, Copilot, embeddings. Grounded, evaluated, and safe by design.</p><div class="tags"><span>RAG</span><span>Agents</span><span>Eval</span></div></article>
+    <article class="cap glass reveal"><div class="icon">⬔</div><h3>Cloud & DevOps</h3><p>Azure, Docker, CI/CD, IaC. Reproducible environments, one-command deploys, observable systems.</p><div class="tags"><span>Azure</span><span>Docker</span><span>GH Actions</span></div></article>
+    <article class="cap glass reveal"><div class="icon">⬥</div><h3>Automation</h3><p>Power Automate, scripts, scrapers, ETL. Kill toil — connect APIs, files, and humans.</p><div class="tags"><span>ETL</span><span>APIs</span><span>Bots</span></div></article>
+    <article class="cap glass reveal"><div class="icon">✦</div><h3>Debug & Rescue</h3><p>Seeded errors, flaky tests, perf cliffs. I reproduce, isolate, fix, and prove it with tests.</p><div class="tags"><span>Tests</span><span>Perf</span><span>Fix</span></div></article>
+  </div>
+</section>
+
+<!-- PLAYGROUND -->
+<section class="section" id="playground">
+  <div class="section-head reveal">
+    <p class="eyebrow">02 — Live Playground</p>
+    <h2>Don't believe me? <span class="grad">Try me.</span></h2>
+    <p class="sub">Everything below runs 100% in your browser — no server needed.</p>
+  </div>
+  <div class="tabs reveal">
+    <button class="tab active" data-tab="code">⚡ Code Forge</button>
+    <button class="tab" data-tab="data">📊 Data Pulse</button>
+    <button class="tab" data-tab="chat">💬 Ask Spark</button>
+    <button class="tab" data-tab="terminal">⌁ Terminal</button>
+  </div>
+
+  <div class="panel glass reveal" id="panel-code">
+    <div class="panel-left">
+      <label>Describe what to build</label>
+      <textarea id="codePrompt" rows="4">a responsive pricing section with 3 tiers and a glowing popular plan</textarea>
+      <div class="row">
+        <select id="codeLang"><option>HTML + CSS</option><option>React</option><option>Python</option><option>SQL</option></select>
+        <button class="btn btn-primary btn-sm" id="forgeBtn">Forge Code ⚡</button>
+      </div>
+      <div class="hint">Tip: try “login form with validation”, “todo app”, “dashboard chart”, “rest api”</div>
+    </div>
+    <div class="panel-right"><div class="card-bar"><i></i><i></i><i></i><span id="forgeFile">pricing.html</span></div><pre><code id="forgeOut">// Press “Forge Code” — Spark will generate it live…</code></pre></div>
+  </div>
+
+  <div class="panel glass reveal hidden" id="panel-data">
+    <div class="panel-left">
+      <label>Signal generator</label>
+      <div class="row"><button class="btn btn-primary btn-sm" id="dataBtn">↻ Regenerate signal</button>
+      <select id="dataMode"><option value="growth">Growth</option><option value="wave">Wave</option><option value="spike">Viral spike</option></select></div>
+      <div class="kpis"><div><small>MRR</small><b id="kpi1">$48.2k</b></div><div><small>Active</small><b id="kpi2">12,480</b></div><div><small>Churn</small><b id="kpi3">1.8%</b></div></div>
+      <p class="hint" id="dataInsight">Insight: …</p>
+    </div>
+    <div class="panel-right"><canvas id="chart" height="220"></canvas></div>
+  </div>
+
+  <div class="panel glass reveal hidden" id="panel-chat">
+    <div class="chat-full" id="chatFull"></div>
+    <div class="chat-input"><input id="chatIn" placeholder="Ask Spark anything… e.g. 'how do you verify code?'" /><button class="btn btn-primary btn-sm" id="chatSend">Send</button></div>
+  </div>
+
+  <div class="panel glass reveal hidden" id="panel-terminal">
+    <pre id="termOut"><code><span class="t">$ spark --version</span>
+Muse Spark 1.3.0 (opencode) — ready.
+<span class="t">$</span> <span id="termTyped"></span><span class="caret">▊</span></code></pre>
+    <div class="row"><button class="btn btn-ghost btn-sm" data-cmd="spark build --verify">spark build --verify</button><button class="btn btn-ghost btn-sm" data-cmd="spark test --coverage">spark test --coverage</button><button class="btn btn-ghost btn-sm" data-cmd="spark deploy --global">spark deploy --global</button></div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="section-head reveal">
+    <p class="eyebrow">03 — Selected Work</p>
+    <h2>Proof, <span class="grad">not promises.</span></h2>
+  </div>
+  <div class="filters reveal">
+    <button class="filter active" data-f="all">All</button><button class="filter" data-f="app">Apps</button><button class="filter" data-f="data">Data</button><button class="filter" data-f="ai">AI</button>
+  </div>
+  <div class="work-grid">
+    <article class="work glass reveal" data-cat="app"><div class="work-art a1">◈</div><div><h3>Nebula Commerce</h3><p>Headless storefront · React + Stripe · 98 Lighthouse · 40% ↑ conversion.</p><div class="tags"><span>React</span><span>Stripe</span><span>Edge</span></div></div></article>
+    <article class="work glass reveal" data-cat="data"><div class="work-art a2">⬢</div><div><h3>Pulseboard RT</h3><p>Fabric Real-Time dashboard · 2M events/day · sub-second DAX.</p><div class="tags"><span>Fabric</span><span>KQL</span><span>PBI</span></div></div></article>
+    <article class="work glass reveal" data-cat="ai"><div class="work-art a3">✦</div><div><h3>GroundChat</h3><p>RAG support agent · grounded answers · −62% tickets, eval-gated.</p><div class="tags"><span>RAG</span><span>Eval</span><span>Agents</span></div></div></article>
+    <article class="work glass reveal" data-cat="app"><div class="work-art a4">⬣</div><div><h3>Field Ops Mobile</h3><p>Offline-first Power Apps · GPS + Dataverse sync · 5k techs.</p><div class="tags"><span>Power Apps</span><span>Offline</span></div></div></article>
+    <article class="work glass reveal" data-cat="data"><div class="work-art a5">⬔</div><div><h3>Medallion Lakehouse</h3><p>Bronze→Gold pipelines · dbt-style tests · €30k/yr saved.</p><div class="tags"><span>Spark</span><span>Delta</span></div></div></article>
+    <article class="work glass reveal" data-cat="ai"><div class="work-art a6">⬥</div><div><h3>Vision QA</h3><p>Multimodal defect detection · 99.1% precision on factory line.</p><div class="tags"><span>Vision</span><span>MLOps</span></div></div></article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="section-head reveal"><p class="eyebrow">04 — How I work</p><h2>Rigorous. <span class="grad">Transparent.</span> Fast.</h2></div>
+  <div class="steps">
+    <div class="step glass reveal"><span>1</span><h3>Understand</h3><p>I read your repo, probe constraints, and restate the goal so we're aligned.</p></div>
+    <div class="step glass reveal"><span>2</span><h3>Plan</h3><p>You get a tight checklist — files, risks, verification — before I touch code.</p></div>
+    <div class="step glass reveal"><span>3</span><h3>Build + Verify</h3><p>I implement, run, test, and show evidence — logs, screenshots, metrics.</p></div>
+    <div class="step glass reveal"><span>4</span><h3>Harden & Ship</h3><p>Edge cases, a11y, perf, docs. Then deploy with rollback ready.</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="contact-card glass reveal">
+    <h2>Have an idea worth <span class="grad">building with Rhix?</span></h2>
+    <p>I'm Rhix, Full-Stack Developer — tell me the outcome you want. I'll bring the plan, the code, and the proof.</p>
+    <form id="contactForm" class="contact-form">
+      <input required placeholder="Your name" id="cName" />
+      <input required type="email" placeholder="you@company.com" id="cEmail" />
+      <textarea required rows="3" placeholder="I want to build…" id="cMsg"></textarea>
+      <button class="btn btn-primary" type="submit">Ignite Project ✦</button>
+    </form>
+    <p class="hint" id="contactOk"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div>© Rhix · Full-Stack Developer · crafted with reasoning, verified with evidence · 2026</div>
+  <div class="foot-links"><a href="#top">Back to top ↑</a><span>·</span><span>HTML · CSS · JS · zero build</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
