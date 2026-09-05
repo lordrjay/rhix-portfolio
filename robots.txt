@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lordrjay.github.io/rhix-portfolio/sitemap.xml
